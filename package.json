@@ -1,6 +1,6 @@
 {
-  "name": "@atlassian/gajira-find-issue-key",
-  "version": "3.0.1",
+  "name": "@Justin-JHG/gajira-find-issue-key",
+  "version": "1.0.0",
   "description": "Find issue keys in string",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
 		"lint": "eslint",
 		"precommit": "run-p lint build"
   },
-  "author": "Atlassian <github@atlassian.com>",
+  "author": "Justin",
   "license": "ISC",
   "dependencies": {
     "@actions/core": "^1.10.0",
