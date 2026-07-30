@@ -10,8 +10,14 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
       
-    - run: yarn install
-    - run: yarn precommit
+    - name: Setup Node.js
+      uses: actions/setup-node@v6
+      with:
+        node-version: '24'
+        cache: 'npm'
+      
+    - run: npm ci
+    - run: npm run precommit
 
     - name: Login
       uses: Justin-JHG/gajira-login@v1
